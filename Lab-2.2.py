@@ -10,6 +10,6 @@ for month in range(months):
         money = salary - spend
     else:
         money = salary - spend
-    spend = spend * (1 + increase)
     money_capital -= money
+    spend = spend * (1 + increase)
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", int(money_capital))
